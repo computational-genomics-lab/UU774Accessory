@@ -74,10 +74,11 @@ And also read the entire readCount file that has same number of columns as the n
 6          29          20          27    1897    2001     1359      804
 And Create a DESEQ dataset as described above.
 [dds <- DESeqDataSetFromMatrix(countData=countData, colData=allmetadata, design=~dex, tidy=TRUE)]
-Normalization (Tutorial from : https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html )
-To perform the median of ratios method of normalization, DESeq2 has a single estimateSizeFactors() function that will generate size factors for us. We will use the function in the example below, but in a typical RNA-seq analysis this step is automatically performed by the DESeq() function, which we will see later.
+https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html 
+
 dds<- estimateSizeFactors(dds)
-By assigning the results back to the dds object we are filling in the slots of the DESeqDataSet object with the appropriate information. We can take a look at the normalization factor applied to each sample using:
+By assigning the results back to the dds object we are filling in the slots of the DESeqDataSet object with the appropriate information. 
+We can take a look at the normalization factor applied to each sample using:
 > sizeFactors(dds)
      hs24HA    hs24HA.1     hsCtrlA     hsCtrlB       hs6HA       hs6HB
  6.56384808  6.70724313  1.04587719  3.82713123  4.75508467  6.55832785
@@ -179,9 +180,10 @@ https://combine-australia.github.io/RNAseq-R/06-rnaseq-day1.html for edgeR
 Running CheckM
 
 
-checkm  lineage_wf  checkmBin  checkmout  # CheckmBin is the directory that contains the genome fasta file ( A single file or multiple files can be accommodated). Output will be stored in checkmout directory.
+checkm  lineage_wf  checkmBin  checkmout  # CheckmBin is the directory that contains the genome fasta file ( A single file or multiple files can be accommodated). 
+Output will be stored in checkmout directory.
 
-Running Pyani for tetra nucleotide abundance and AAI and ANI comparisons.
+**Running Pyani for tetra nucleotide abundance and AAI and ANI comparisons.**
 
 average_nucleotide_identity.py -i ./separateScaffolds -o Mastigo -l result74.txt -m ANIm -g --gformat png,pdf --write_excel
 average_nucleotide_identity.py -i ./separateScaffolds -o MastigoTetra -l result74.txt -m TETRA -g --gformat png,pdf --write_excel # Here the separate scaffolds directory contains scaffolds as separate files.
@@ -319,7 +321,7 @@ JH98    //chromosomes in y axis
 
 Run Ka/Ks analysis using MCScanX:
 
-perl add_ka_and_ks_to_collinearity.pl  -i ../cyano/all.collinearity -d ../cyano/all.cds -o all.collinearity.kaks
+``perl add_ka_and_ks_to_collinearity.pl  -i ../cyano/all.collinearity -d ../cyano/all.cds -o all.collinearity.kaks``
 
 Adding Ka/ks ratio to the last column:
 
