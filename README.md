@@ -1,18 +1,20 @@
-# UU774Accessory
+<b>UU774Accessory</b>
+
 commandlines and small scripts for analyzing UU774 data
 
 RNAseq Data Normalization:
 
-# Generate FeatureCount files using the following commands. Input types are .bam files (alignment files) and the annotation file in gtf format.
+Generate FeatureCount files using the following commands. Input types are .bam files (alignment files) and the annotation file in gtf format.
 
 featureCounts -a Genbank.gtf -o genbankFeatureAll PATH/*.bam  PATH/74_hs_6h*.bam  PATH/*.bam  PATH/*.bam
 
-# Now since multiple comparisons are not possible, one can create metadata files with pairs of conditions and also the feature count file should have matching number of columns. 
+Now since multiple comparisons are not possible, one can create metadata files with pairs of conditions and also the feature count file should have matching number of columns. 
 Example:  cut -f 1,13,14,15,16 genbankFeatureAll > nmData
-# Read the featureCount file
+Read the featureCount file
 >countData <-    read.table("/home/sutripa/Mastigocladus_laminosus_74_data/nmData",header=TRUE, sep="\t")
 
 >head(countData)
+<pre>
         Geneid nitroNMd12A nitroNMd12B nitroNPd12A nitroNPd12B
 1 BLD44_000005         134          94          77          60
 2 BLD44_000010         182         214          43          55
@@ -20,27 +22,35 @@ Example:  cut -f 1,13,14,15,16 genbankFeatureAll > nmData
 4 BLD44_000020           8          16           6          17
 5 BLD44_000025         109          94          71          82
 6 BLD44_000030          30          29          20          27
+</pre>
 
-# Create metadata file nmMetadata
+Create metadata file nmMetadata
 id      dex     cell
 nitroNMd12A     nmControl       nitroNMd12A
 nitroNMd12B     nmControl       nitroNMd12B
 nitroNPd12A     nmTreated       nitroNPd12A
 nitroNPd12B     nmTreated       nitroNPd12B
 >nmmetadata <- read.table("/home/sutripa/Mastigocladus_laminosus_74_data/nmMetadata", header=TRUE, sep="\t")
-# Now read and Construct DESEQDataSet Object
+
+Now read and Construct DESEQDataSet Object
+
 >dds <- DESeqDataSetFromMatrix(countData=countData, colData=nmmetadata, design=~dex, tidy=TRUE)
-# Now we’re ready to run DESEQ function
+
+Now we’re ready to run DESEQ function
+
 > dds <- DESeq(dds)
+<pre>
 estimating size factors
 estimating dispersions
 gene-wise dispersion estimates
 mean-dispersion relationship
 final dispersion estimates
 fitting model and testing
-
-#Creating an all metadata file for all the conditions:
-One can also create an allmetadata file with the following contents: It is absolutely essential that the rows of metadata file are in the same order as the column of the count file!!
+</pre>
+<b>#Creating an all metadata file for all the conditions:
+One can also create an allmetadata file with the following contents: It is absolutely essential that the rows 
+of metadata file are in the same order as the column of the count file!!</b>
+<pre>
 id      dex     cell
 nitroNMd12A     nmControl       nitroNMd12A
 nitroNMd12B     nmControl       nitroNMd12B
@@ -56,8 +66,12 @@ tpNMd0A tpcontrol       tpNMd0A
 tpNMd0B tpcontrol       tpNMd0B
 tpNMd12A        12dTreated      tpNMd12A
 tpNMd12B        12dTreated      tpNMd12A
+<pre>
+
 And also read the entire readCount file that has same number of columns as the number of rows + 1 of allmetadata file:
+
 > head(countData)
+<pre>
         Geneid hs24HA hs24HA.1 hsCtrlA hsCtrlB hs6HA hs6HB nitroNMd12A
 1 BLD44_000005   3563     3551     596    2169  2710  3570         134
 2 BLD44_000010   3553     3549     546    1816  2361  3452         182
@@ -72,6 +86,7 @@ And also read the entire readCount file that has same number of columns as the n
 4          16           6          17     855     788      864      625
 5          94          71          82   24048   23114    16188    11336
 6          29          20          27    1897    2001     1359      804
+</pre>
 And Create a DESEQ dataset as described above.
 [dds <- DESeqDataSetFromMatrix(countData=countData, colData=allmetadata, design=~dex, tidy=TRUE)]
 https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html 
