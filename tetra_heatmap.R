@@ -1,4 +1,4 @@
-cog<-read.delim("TETRA_matrix")
+cog<-read.delim("tetra_matrix")
 View(cog)
 row.names(cog)<-cog$Id
 cog<-cog[,-1]
