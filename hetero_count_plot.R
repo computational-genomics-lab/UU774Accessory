@@ -1,4 +1,5 @@
 car<-read.delim("hetero_count_boxh.tsv")
+#car<-read.delim("hetero_count_boxv.tsv")
 View(car)
 carr<-stack(car)
 View(carr)
