@@ -1,0 +1,104 @@
+Id	Nitrogen_Stress	Nutrient_Stress
+BLD44_015735_sepF	-1.22	0
+BLD44_023650_Multifunctional CCA repair	-2.63	0
+BLD44_005810_DNA Nickase	1.6	3.4
+BLD44_022880_Formamidopyrimidine-DNA glycosylase	1.7	0
+BLD44_026465_Type IV pilus biogenesis and competence protein PilQ	-3.26	0
+BLD44_023445_Twitching mobility protein	-6.48	0
+BLD44_005625_Twitching mobility protein	-2.09	0
+BLD44_011130_Gliding motility regulatory protein	-4.5	-1.3
+BLD44_011135_Methyl-accepting chemotaxis protein McpB	-4.74	-1.9
+BLD44_011140_CheW	-4.1	-1.9
+BLD44_011145_Transcriptional regulatory protein WalR	-7.64	-1.79
+BLD44_027030_Fimbrial Protein	-7.07	-2.08
+BLD44_026585_Chromosome partition protein Smc	-4.9	-1.5
+BLD44_014095_Chromosomal replication initiator protein DnaA	-1.99	0
+BLD44_028525_Murein hydrolase activator NlpD 	-5.4	1.924
+BLD44_028600_ParM/StbA	-4.48	1.4
+BLD44_018165_Histidine protein kinase DivJ	-4.24	-1.67
+BLD44_026445_Cell division protein FtsA  responsible for cytokinesis	-3.7	0
+BLD44_017275_Cytoskeleton protein RodZ	-1.58	0
+BLD44_021615_Sporulation initiation inhibitor protein Soj	-2.645	0
+BLD44_014135_Sporulation initiation inhibitor protein Soj	-3.19	-2.09
+BLD44_025375_Serine/threonine-protein kinase PrkC	-4.14	0
+BLD44_015770_Serine/threonine-protein kinase C	-1.77	0
+BLD44_027765_Linear gramicidin synthase subunit D	2.9	0
+BLD44_011060_Extra cellular Estarase EstB	-2.153	0
+BLD44_028075_Long-chain-fatty-acid--CoA ligase FadD15	2.359	0
+BLD44_018145_Glycogen synthase	4.24	1.86
+BLD44_014205_RNA polymerase sigma-F factor	-7.7	0
+BLD44_018865_RNA polymerase sigma factor SigA2	-1.9	0
+BLD44_011145_Transcriptional regulatory protein WalR. 	-7.6	0
+BLD44_009620_Mannuronan C5-epimerase AlgE2 (alginate formation)	-2.63	0
+BLD44_018425_Putative glycosyltransferase EpsE	-2.4	1.4
+BLD44_018460_UDP-glucose:undecaprenyl-phosphate glucose-1-phosphate transferase	-1.74	0
+BLD44_025360_Cyclic AMP receptor protein crp/fnr family transcriptional regulators	-5.7	0
+BLD44_018595_Signal transduction histidine-protein kinase ArlS	-2.9	0
+BLD44_008270_Blue light activation protein or PAS domain containing proteins	-4.37	-1.3
+BLD44_025050_Sensor kinase CckA	-1.69	0
+BLD44_006795_Carbonic anhydrase	-6.4	0
+BLD44_028785_Bicarbonate transport system permease protein CmpB	-1.6	0
+BLD44_021265_Photosystem II protein D1 3	-2	0
+BLD44_026620_Photosystem II protein D1 2	-1.8	0
+BLD44_010210_Ferredoxin-3	-3.5	1.42
+BLD44_017550_Glucose/mannose transporter GlcP	-2.12	0
+BLD44_014785_Potassium-transporting ATPase ATP-binding subunit	3.1	2.14
+BLD44_008210_Ribulose bisphosphate carboxylase small chain	-1.77	0
+BLD44_029995_Subtilisin DY	-3.4	0
+BLD44_023450_Type II secretion system protein E	-2.49	0
+BLD44_014315_Secreted effector protein PipB2	-2.05	0
+BLD44_023625_ATP-dependent Clp protease proteolytic subunit	2.45	0
+BLD44_023705_Serine protease Do-like HtrA	-1.5	0
+BLD44_030010_Foldase protein PrsA 1	-3	0
+BLD44_005790_Quercetin2 (cupin domain)	-3.6	0
+BLD44_006340_Exfoliative toxin A	-4.65	1.2
+BLD44_025365_Germacrene A synthase	-5.5	0
+BLD44_025370_Putative epoxidase LasC	-3.05	0
+BLD44_027715_Flavin-dependent tryptophan halogenase PrnA	2.73	1.19
+BLD44_027735_Glutaryl-7-aminocephalosporanic-acid acylase	2.4	0
+BLD44_027755_Aspartate 1-decarboxylase	2.4	0
+BLD44_025175_Ketol-acid reductoisomerase (NADP(+))	1.8	0
+BLD44_027750_Chondramide synthase cmdD	2.15	0
+BLD44_027740_Flavin-dependent tryptophan halogenase PrnA	2.23	1.04
+BLD44_007705_putative hydrolase YcaC	0	3.28
+BLD44_027765_Phthiocerol/phenolphthiocerol synthesis polyketide synthase type I PpsE	2.57	0
+BLD44_016710_N-ethylmaleimide reductase	2.73	0
+BLD44_009330_Metallothiol transferase FosB	1.6	0
+BLD44_005525_2-deoxystreptamine glucosyltransferase	2.3	0
+BLD44_014470_Cholesterol oxidase	-1.89	1.02
+BLD44_028830_Transaldolase	2.4	0
+BLD44_015115_Xylulose-5-phosphate phosphoketolase	1.99	1.76
+BLD44_015560_Glutamate racemase	-2.77	0
+BLD44_008550_Metalloregulation DNA-binding stress protein	0	3.13
+BLD44_006165_UvrABC system protein B	2.66	0
+BLD44_017910_putative manganese catalase	2.89	1.5
+BLD44_020000_DNA protection during starvation	1.67	1.43
+BLD44_023275_Phytoene desaturase (lycopene-forming)	2.47	1.78
+BLD44_010800_D-inositol 3-phosphate glycosyltransferase	4.68	0
+BLD44_016135_Glutathione S-transferase YfcF	1.99	0
+BLD44_012120_Orange carotenoid-binding protein	3.64	1.92
+BLD44_025655_Superoxide dismutase [Fe]	1.6	0
+BLD44_010220_2-oxoglutarate-dependent ethylene/succinate-forming enzyme	-5.15	-1.2
+BLD44_011825_Heterocyst differentiation ATP-binding protein HepA	-5.45	0
+BLD44_000040_Heterocyst differentiation control protein(HetR gene)	-1.76	0
+BLD44_018455_Heterocyst differentiation ATP-binding protein HepA	-1.99	0
+BLD44_011150_PatA	-1.3	0
+BLD44_011155_PatA	-3.2	-1.79
+BLD44_011590_Glutamate dehydrogenase	1.6	0
+BLD44_008425_L-threo-3-hydroxyaspartate ammonia-lyase	-1.5	1.27
+BLD44_010680_Nitrate/nitrite transporter NrtP	0	-2.35
+BLD44_010685_Nitrate reductase	0	-2.2
+BLD44_019955_Nitrogenase iron protein	-1.59	1.4
+BLD44_019945_Nitrogenase molybdenum-iron protein alpha chain	0	1.6
+BLD44_019900_Nitrogenase molybdenum-iron protein alpha chain	0	1.53
+BLD44_019850_Nitrogenase-stabilizing/protective protein NifW 2	-2.6	1.7
+BLD44_015015_NtcA: Global Nitrogen regulator	-1.22	0
+BLD44_003370_NrrA: Alkaline phosphatase synthesis transcriptional regulatory protein SphR	-2.5	0
+BLD44_014400_Adenosylhomocysteinase	1.5	0
+BLD44_028190_Phosphate-binding protein PstS	-3.8	0
+BLD44_025455_Phosphate-binding protein PstS	0	2.64
+BLD44_025440_Phosphate import ATP-binding protein PstB	0	1.9
+BLD44_027685_Response regulator aspartate phosphatase F	-2.85	1.74
+BLD44_004490_Heat-inducible transcription repressor HrcA	-1.6	0
+BLD44_000510_8-amino-7-oxononanoate synthase	-3.24	-1.2
+BLD44_028555_baseplate J/gp47 protein	-9.12	6.7
